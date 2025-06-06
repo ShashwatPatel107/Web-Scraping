@@ -1,7 +1,5 @@
 # Web Scraping Dynamic Website Using Selenium
 
-> A practical project showcasing automated data extraction from dynamically rendered web pages using Python and Selenium.
-
 ## Goal
 
 To create helping function to built dataset of video informations on perticular topic.
