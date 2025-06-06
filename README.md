@@ -2,68 +2,48 @@
 
 > A practical project showcasing automated data extraction from dynamically rendered web pages using Python and Selenium.
 
-## 🎯 Goal
+## Goal
 
-To scrape and structure data from a dynamic website (JavaScript-rendered) by automating browser interactions and exporting the results in a usable format.
+To create helping function to built dataset of video informations on perticular topic.
+
+---
+## Overview
+Scraping YouTube videos on Python Language using Requests, Pandas, Selenium based on word(s) provided by user.
+
+Scraping Video Informations like Title, Channel Name, video Link etc.
+
+Get result for number of videos.
+
+Store Data in .CSV file.
 
 ---
 
-## 🔍 Overview
 
-This project demonstrates the process of scraping content from dynamic web pages where traditional methods like `requests` and `BeautifulSoup` fall short due to JavaScript content loading.
-
-Using Selenium, we simulate browser behavior, interact with DOM elements, and retrieve data reliably from modern web apps.
-
----
-
-## 🚀 Features
-
-* 🔧 Automates dynamic content scraping via browser simulation
-* 🖱️ Supports user interaction (e.g., clicking buttons, dropdowns)
-* 📊 Data output to CSV or JSON formats
-* 💻 Custom wait strategies for reliable scraping
-* ✅ Tested on ChromeDriver and Firefox (geckodriver)
+## Outline
+Understanding the structure of the YouTube Website.
+Installing and Importing required libraries.
+Getting the keyword(s) from user.
+Using we search videos for the Keyword.
+Download the webpage URL using selenium Web-driver
+Parsing the Top Videos get the below attributes using functions.
+A. Video Title
+B. Name of the Channel C. No. Of views
+D. Video Length E. Thumbnail image
+F. Video Link 6. Create helper functions to get combined lists 7. Storing the extracted data into a dictionary. 8. Compiling all the data into a DataFrame using Pandas and saving the data into .CSV file.
 
 ---
 
-## 🧰 Tech Stack
+## Features
 
-| Component      | Technology                 |
-| -------------- | -------------------------- |
-| Language       | Python 3.x                 |
-| Automation     | Selenium WebDriver         |
-| Parsing        | BeautifulSoup (if needed)  |
-| Browser Driver | ChromeDriver / GeckoDriver |
-| Output Format  | CSV / JSON                 |
+* Automates dynamic content scraping via browser simulation
+* Supports user interaction (e.g., clicking buttons, dropdowns)
+* Data output to CSV or JSON formats
+* Custom wait strategies for reliable scraping
+* Tested on ChromeDriver and Firefox (geckodriver)
 
 ---
 
-## 📁 Project Structure
-
-```text
-Web-Scraping-Dynamic-website-using-Selenium/
-├── scraper.py         # Main scraping script
-├── config.py          # URL and parameter configuration (optional)
-├── requirements.txt   # Python dependencies
-├── output.csv         # Exported data sample
-├── README.md          # Project documentation
-└── screenshots/       # Captured webpage images (optional)
-```
-
----
-
-## 🧭 Development Steps
-
-1. Inspect dynamic page structure
-2. Set up Selenium WebDriver and browser
-3. Locate and interact with key DOM elements
-4. Extract content and parse into structured format
-5. Handle pagination, infinite scroll, or JS triggers
-6. Export cleaned data to CSV/JSON
-
----
-
-## 🔮 Future Enhancements
+## Future Work
 
 * Add multi-page crawling and error handling
 * Integrate proxy rotation and headless mode
@@ -72,34 +52,8 @@ Web-Scraping-Dynamic-website-using-Selenium/
 
 ---
 
-## 👨‍💻 Author
-
-**Shashwat Patel**
-Data Analyst | Aspiring ML Engineer | Tech Enthusiast
-📍 Chicago, IL
-🌐 [LinkedIn](https://www.linkedin.com/in/shashwatpatel107/)
-💼 [Portfolio](https://shashwatpatel.netlify.app)
-
----
-
-## 📜 License
+## License
 
 Licensed under the [MIT License](LICENSE). You are free to use, adapt, and share with attribution.
 
 ---
-
-## 🤝 Contributions
-
-Pull requests and feedback are welcome. Please feel free to fork and enhance this scraper for your use case.
-
----
-
-## 📌 Acknowledgments
-
-* Selenium WebDriver documentation
-* Python community for open-source tools
-
----
-
-> Built with persistence and attention to detail — unlocking the web, one page at a time.
-> — *Shashwat Patel*
